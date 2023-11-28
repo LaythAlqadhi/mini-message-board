@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  each message in messages
+    div
+      h2= message.user + ': ' + message.text
+      p= message.added
+    br
+  a(href="/new") Add a new message!

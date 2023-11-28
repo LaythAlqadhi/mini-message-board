@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= Heading
+  form(method="POST" action="/new")
+    label(for="messageUser") Username:
+    input(type="text" id="messageUser" name="messageUser" required)
+    br
+    label(for="messageText") Message text:
+    textarea(id="messageText" name="messageText" required)
+    br
+    button(type="submit") Submit
